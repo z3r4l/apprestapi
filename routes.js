@@ -8,4 +8,6 @@ module.exports = function (app) {
   app.route('/tampil').get(myjson.tampilMahasiswa);
 
   app.route('/tampil/:id').get(myjson.tampilMahasiswaId);
+
+  app.route('/tambah').post(myjson.tambahData);
 };
